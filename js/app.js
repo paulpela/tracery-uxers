@@ -60,6 +60,8 @@ jQuery(document).ready(function($) {
 
     }, 10);
 
+    jQuery('#survey').tooltip({ offset: 10 });
+
     jQuery('#generate').click(function() {
         $("#generate").prop("disabled", true);
         loadGrammar();
