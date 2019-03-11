@@ -25,7 +25,7 @@ var input = {
     "story": [ "#avatar##body##overall#" ],
     "avatar": [ "<div class=\"row mb-4\"><div class=\"col-3\"><img class=\"avatar\" src=\"https://miro.medium.com/fit/c/240/240/1*lwkv9EOqIU3Q_NGuTc1C9Q@2x.jpeg\"></div><div class=\"col-9\"><h3>#heroName# #heroSurname#, <small>#heroProfession#</small></h3><p>@#username#</p></div></div>" ],
     "body": [ "<p><strong>#heroName# #heroSurname#</strong> is a #skillLevel# #heroProfession# living in #place#. #pronounHe.capitalize#'s #age# years old.</p>#storyPatternNumber#<p><strong>Personality:</strong> #heroName# is #positiveTrait#, #positiveTrait# and #positiveTrait#. #pronounHe.capitalize#'s #repetitive# #negativeTrait#.</p>" ],
-    "storyPatternNumber": [ "<p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p>" ],
+    "storyPatternNumber": [ "<p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p>", "<p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p><p>#storyPattern#</p>" ],
     "maleName": maleNames,
     "femaleName": [ "Anna", "Bianca", "Theresa", "Kate", "Laura" ],
     "surname": surnames,
