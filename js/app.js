@@ -2,16 +2,29 @@ console.log("app");
 
 jQuery(document).ready(function($) {
 
+    var grammar = tracery.createGrammar(input);
+
     function loadGrammar() {
         jQuery("#generate").prop("disabled", true);
         jQuery("#generate i").addClass('fa-spin');
 
         jQuery("#output").html("<div class=\"loading col text-center mt-5\"><i class=\"fas fa-3x fa-spinner fa-spin\"></i></div>");
 
-        var grammar = tracery.createGrammar(input);
-        jQuery("#grammar").html(grammar.toText());
+        //jQuery("#grammar").html(grammar.toText());
+        var gender = null;
 
-        var s = grammar.flatten("#origin#");
+        if(Math.random() > 0.5) {
+            gender = "female";
+        } else {
+            gender = "male";
+        }
+
+        if(gender == "male") {
+            var s = grammar.flatten("#origin-male#");
+        } else {
+            var s = grammar.flatten("#origin-female#");
+        }
+
         //console.log(s);
         var div = jQuery("<div/>", {
             class : "outputSample",
@@ -23,7 +36,7 @@ jQuery(document).ready(function($) {
             jQuery.ajax({
                 'async': false,
                 'global': false,
-                'url': 'https://randomuser.me/api/?gender=male',
+                'url': 'https://randomuser.me/api/?gender=' + gender,
                 'dataType': "json",
                 'success': function (data) {
                     json = data.results[0].picture.large;
