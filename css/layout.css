@@ -110,3 +110,6 @@ main {
     padding: 10px;
 }
 
+#voting .btn {
+    width: 28% !important;
+}
