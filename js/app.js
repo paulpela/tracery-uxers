@@ -64,7 +64,9 @@ jQuery(document).ready(function($) {
 
     jQuery('#generate').click(function() {
         $("#generate").prop("disabled", true);
+        $("#generate i").addClass('fa-spin');
         loadGrammar();
+        $("#generate i").removeClass('fa-spin');
         $("#generate").prop("disabled", false);
     });
 });
