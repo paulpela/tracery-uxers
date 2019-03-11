@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5200767-37"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-5200767-37');
+        </script>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +21,7 @@
         <link rel="stylesheet" href="/css/layout.css">
 
         <title>UX Designer Persona Generator Using Tracery.io</title>
+        <meta name="description" content="A persona generator using Tracery.io to create UX Designer Personas."/>
     </head>
     <body>
         <nav class="navbar navbar-dark fixed-top shadow-sm bg-dark navbar-expand-lg">
@@ -27,6 +38,9 @@
         <main class="container">
             <div class="row justify-content-center">
                 <div id="output" class="col-6">
+                    <div class="loading">
+                        <i class="fas fa-3x fa-spinner fa-spin"></i>
+                    </div>
                 </div>
             </div>
         </main>
