@@ -14,10 +14,9 @@ var getRemoteData = function (url) {
 }
 
 var maleNames = getRemoteData('/corpus/people/names/male-names.json');
-
 var surnames = getRemoteData('/corpus/people/names/surnames.json');
-
 var professions = getRemoteData('/corpus/people/professions/ux-design.json');
+var citiesPoland = getRemoteData('/corpus/geography/cities/poland.json');
 
 var input = {
     "origin-male": [ "#[heroName:#maleName#][heroSurname:#surname#][pronounHe:he][pronounHis:his][heroProfession:#profession#]story#" ],
@@ -30,6 +29,7 @@ var input = {
     "femaleName": [ "Anna", "Bianca", "Theresa", "Kate", "Laura" ],
     "surname": surnames,
     "profession": professions,
+    "cityPoland": citiesPoland,
     "repetitive": [ "often", "sometimes", "rarely", "usually" ],
     "overall": [ "<p>Overall, a cool person you would like to #personSummaryDescription#.</p>" ],
     "personSummaryDescription": [ "work with", "meet", "meet for coffee", "network with", "befriend", "get to know better", "add as a friend on Twitter" ],
@@ -43,7 +43,7 @@ var input = {
     "weirdWord": [ "Bumfuzzle", "UltraLaser", "DrDoom", "MasterOfDisaster", "Cattywampus", "Gardyloo", "Taradiddle", "Snickersnee", "Widdershins", "Collywobbles", "Gubbins", "Abibliophobia", "Bumbershoot",
         "Lollygag", "Flibbertigibbet", "Malarkey", "Pandiculation", "Sialoquent", "Wabbit", "Snollygoster", "Erinaceous", "Quire", "Ratoon", "Xertz", "Zoanthropy",
         "Pauciloquent", "Bloviate", "Brouhaha", "Absquatulate", "Comeuppance", "Nincompoop" ],
-    "place": [ "Budapest, Hungary", "Warsaw, Poland", "Paris, France", "London, UK", "Rome, Italy", "Athens, Greece" ],
+    "place": [ "Budapest, Hungary", "#cityPoland#, Poland", "Paris, France", "London, UK", "Rome, Italy", "Athens, Greece" ],
     "storyPattern": [ "#storyPatternStruggle#", "#storyPatternCreation#", "#storyPatternBlog#" ],
     "storyPatternStruggle": [ "#pronounHe.capitalize# used to struggle with #ux-skill# #timeInPast#. One day, #pronounHe# discovered new tools and read some articles and decided to improve #pronounHis# workflow. #pronounHe.capitalize# worked hard to achieve success, until finally #pronounHe# managed to optimise #pronounHis# workflow." ],
     "ux-skill": [ "wireframing", "prototyping", "user research", "persona creation", "data analysis", "visual design" ],
