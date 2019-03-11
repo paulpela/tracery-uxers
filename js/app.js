@@ -52,6 +52,7 @@ jQuery(document).ready(function($) {
         jQuery("#output").append(div);
         jQuery("#output img").attr("src", avatar);
 
+        $("#generate i").removeClass('fa-spin');
 
     }
 
@@ -66,7 +67,6 @@ jQuery(document).ready(function($) {
         $("#generate").prop("disabled", true);
         $("#generate i").addClass('fa-spin');
         loadGrammar();
-        $("#generate i").removeClass('fa-spin');
         $("#generate").prop("disabled", false);
     });
 });
