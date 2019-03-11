@@ -70,7 +70,8 @@ jQuery(document).ready(function($) {
 
     }, 10);
 
-    jQuery('#survey').tooltip({ offset: 10 });
+    jQuery('#survey').tooltip();
+    jQuery('#readStory').tooltip();
 
     jQuery('#generate').click(function() {
         loadGrammar();
