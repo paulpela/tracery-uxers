@@ -13,11 +13,11 @@ var getRemoteData = function (url) {
     return json;
 }
 
-var maleNames = getRemoteData('https://raw.githubusercontent.com/paulpela/corpus/master/people/names/male-names.json');
+var maleNames = getRemoteData('/corpus/people/names/male-names.json');
 
-var surnames = getRemoteData('https://raw.githubusercontent.com/paulpela/corpus/master/people/names/surnames.json');
+var surnames = getRemoteData('/corpus/people/names/surnames.json');
 
-var professions = getRemoteData('https://raw.githubusercontent.com/paulpela/corpus/master/people/professions/ux-design.json');
+var professions = getRemoteData('/corpus/people/professions/ux-design.json');
 
 var input = {
     "origin-male": [ "#[heroName:#maleName#][heroSurname:#surname#][pronounHe:he][pronounHis:his][heroProfession:#profession#]story#" ],
