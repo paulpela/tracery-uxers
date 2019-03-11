@@ -1,5 +1,7 @@
 body {
     background-color: #eee;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -32,18 +34,59 @@ a:hover {
 #social a {
     font-size: 20px;
     margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: #aaa;
+    background: none;
+    border: 2px solid #aaa;
+    width: 30px;
+    height: 30px !important;
+    line-height: 30px;
+    font-size: 12px;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+#social a:hover {
+    color: #343a40;
 }
 
 #social .medium {
     color: white;
+    border-color: white;
+}
+
+#social .medium:hover {
+    background-color: white;
 }
 
 #social .twitter {
     color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+
+#social .twitter:hover {
+    background-color: #1DA1F2;
 }
 
 #social .email {
     color: #b23121;
+    border-color: #b23121;
+}
+
+#social .email:hover {
+    background-color: #b23121;
+}
+
+#social .github {
+    color: #6e5494;
+    border-color: #6e5494;
+}
+
+#social .github:hover {
+    background-color: #6e5494;
 }
 
 main {
@@ -52,7 +95,7 @@ main {
     background-color: white;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .bg-very-dark {

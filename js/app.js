@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
         jQuery("#generate").prop("disabled", true);
         jQuery("#generate i").addClass('fa-spin');
 
-        jQuery("#output").html("<div class=\"loading\"><i class=\"fas fa-3x fa-spinner fa-spin\"></i></div>");
+        jQuery("#output").html("<div class=\"loading col text-center mt-5\"><i class=\"fas fa-3x fa-spinner fa-spin\"></i></div>");
 
         var grammar = tracery.createGrammar(input);
         jQuery("#grammar").html(grammar.toText());

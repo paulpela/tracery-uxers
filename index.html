@@ -29,16 +29,17 @@
                 <a class="navbar-brand" href="/"><i class="fas fa-lg fa-users"></i> UX Designer Persona Generator</a>
 
                 <div class="ml-auto">
-                    <button id="survey" class="btn btn-secondary ml-auto mr-5 my-2 my-sm-0" type="button" data-toggle="tooltip" data-placement="bottom" title="This website will use data gathered from the survey to generate personas in the future! How cool!"><i class="fas fa-poll"></i> Take the survey</button>
+                    <a href="http://bit.ly/UXDesignerPersonaGeneratorSurvey" id="survey" class="btn btn-secondary ml-auto mr-5 my-2 my-sm-0" data-toggle="tooltip" data-placement="bottom" title="This website will use data gathered from the survey to generate personas in the future! How cool!"><i class="fas fa-poll"></i> Take the survey</a>
                     <button id="generate" class="btn btn-success ml-auto my-2 my-sm-0" type="button"><i class="fas fa-sync"></i> Generate new persona</button>
                 </div>
             </div>
         </nav>
 
+        <div class="d-md-none mt-5">&nbsp;</div>
         <main class="container">
             <div class="row justify-content-center">
-                <div id="output" class="col-6">
-                    <div class="loading">
+                <div id="output" class="col-md-7 col">
+                    <div class="col text-center mt-5 loading">
                         <i class="fas fa-3x fa-spinner fa-spin"></i>
                     </div>
                 </div>
@@ -48,27 +49,27 @@
         <footer class="page-footer sticky-bottom shadow-sm pt-3 pb-5 bg-dark text-white small">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-4">
                         <h5>What's this?</h5>
 
-                        <p>This is an example generator created using the Tracery library.</p>
-                        <p>It's powered by the answers people provide in the survey.</p>
+                        <p>This is a persona generator. I've created it using Tracery, a library which uses grammars to generate surprisingly new text.</p>
                         <p><a href="" class="btn btn-secondary"><i class="fab fa-medium"></i> Read the story on Medium</a></p>
-                        <p><a href="" class="btn btn-secondary"><i class="fab fa-github"></i> Source code</a></p>
+                        <p><a href="https://github.com/paulpela/tracery-uxers" class="btn btn-secondary"><i class="fab fa-github"></i> Source code</a></p>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <h5>About Tracery</h5>
                         <p><a href="http://tracery.io">Tracery</a> is a super-simple tool and language to generate text, by <a href="https://twitter.com/galaxykate">Kate Compton</a>. It's written in JavaScript, but libraries in other languages also exist. It's been used by middle school students, humanities professors, indie game developers, professional bot makers, and lots of regular people, too.</p>
-                        <p><a href="" class="btn btn-secondary"><i class="fab fa-medium"></i> Introduction to Tracery</a></p>
+                        <p><a href="https://medium.com/procedural-storytelling/using-procedural-text-generation-techniques-to-write-cool-stories-4fa4cf74a72a" class="btn btn-secondary"><i class="fab fa-medium"></i> Introduction to Tracery</a></p>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <h5>Author</h5>
 
-                        <p><img src="https://miro.medium.com/fit/c/240/240/1*lwkv9EOqIU3Q_NGuTc1C9Q@2x.jpeg" class="avatar author ml-2 mb-2 float-right">Hello! I'm <strong>Paul Pela</strong>, ex web developer switching to UX. I'm interested in procedural generation techniques. I write for UX Collective, UX Planet and for two of my own publications: UX Heroes and Procedural Stories on Medium.</p>
+                        <p><img src="https://miro.medium.com/fit/c/60/60/1*lwkv9EOqIU3Q_NGuTc1C9Q@2x.jpeg" class="avatar author ml-2 mb-2 float-right">Hello! I'm <strong>Paul Pela</strong>, ex web developer switching to UX. I'm interested in procedural generation techniques. I write for <a href="https://twitter.com/uxdesigncc">UX Collective</a>, <a href="https://twitter.com/uxplanet">UX Planet</a> and for two of my own publications: <a href="https://medium.com/ux-heroes">UX Heroes</a> and <a href="https://medium.com/procedural-stories">Procedural Stories</a> on Medium.</p>
                         <div id="social" class="mt-1">
-                            <a href="" class="social medium"><i class="fab fa-lg fa-medium"></i></a>
-                            <a href="" class="social twitter"><i class="fab fa-lg fa-twitter-square"></i></a>
-                            <a href="" class="social email"><i class="fas fa-lg fa-envelope-square"></i></a>
+                            <a href="https://medium.com/@paulpela" class="social medium"><i class="fab fa-lg fa-medium-m"></i></a>
+                            <a href="https://twitter.com/paulpela" class="social twitter"><i class="fab fa-lg fa-twitter"></i></a>
+                            <a href="https://github.com/paulpela" class="social github"><i class="fab fa-lg fa-github"></i></a>
+                            <a href="mailto:paulpela@gmail.com" class="social email"><i class="fas fa-lg fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
             <div class="container">
                 <div class="row pt-3">
                     <div class="col">
-                        <p>Powered by Tracery, randomuser.me and GitHub Pages</p>
+                        <p>Powered by <a href="http://tracery.io">Tracery</a>, <a href="http://randomuser.me">randomuser.me</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</p>
                     </div>
                 </div>
             </div>
