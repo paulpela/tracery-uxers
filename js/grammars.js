@@ -37,7 +37,7 @@ var input = {
     "age": [ "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42" ],
     "positiveTrait": [ "energetic", "creative", "outgoing", "thourough", "positive", "optimistic", "happy", "smart", "sophisticated", "charismatic" ],
     "negativeTrait": [ "lazy", "selfish", "quarrelsome", "egotisitical", "pessimistic" ],
-    "username": [ "#weirdWord#", "#usernamePrefix.capitalize##heroName#_#usernameWord#", "#usernamePrefix.capitalize##heroName##heroSurname##usernameWord.capitalize#" ],
+    "username": [ "#weirdWord#", "#weirdWord##heroName#", "#usernamePrefix.capitalize##heroName#_#usernameWord#", "#usernamePrefix.capitalize##heroName##heroSurname##usernameWord.capitalize#" ],
     "usernameWord": [ "theGreat", "UX", "designer", "usability", "design", "wireframes", "monkey" ],
     "usernamePrefix": [ "", "", "", "", "", "galaxy", "laser", "space", "rogue", "prototyping", "happy" ],
     "weirdWord": [ "Bumfuzzle", "UltraLaser", "DrDoom", "MasterOfDisaster", "Cattywampus", "Gardyloo", "Taradiddle", "Snickersnee", "Widdershins", "Collywobbles", "Gubbins", "Abibliophobia", "Bumbershoot",
