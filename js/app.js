@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
 
     function loadGrammar() {
         jQuery("#generate").prop("disabled", true);
-        jQuery("#generate i").addClass('fa-spin');
 
         jQuery("#output").html("<div class=\"loading col text-center mt-5\"><i class=\"fas fa-3x fa-spinner fa-spin\"></i></div>");
 
@@ -49,8 +48,21 @@ jQuery(document).ready(function($) {
         jQuery("#output").append(div);
         jQuery("#output img").attr("src", avatar);
 
-        jQuery("#generate i").removeClass('fa-spin');
-        jQuery("#generate").prop("disabled", false);
+        jQuery("#generate").attr("data-percent", 0);
+
+        var timer = setInterval(function() {
+            var percent = parseInt(jQuery("#generate").attr("data-percent"));
+            percent += 10;
+            jQuery("#generate").attr("data-percent", percent);
+            // background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+            jQuery("#generate").css({ 'background': 'linear-gradient(90deg, #28a745 ' + percent + '%, #343a40 ' + percent + '%)'});
+
+            if(percent >= 100) {
+                jQuery("#generate").prop("disabled", false);
+                jQuery("#generate").attr("data-percent", 0);
+                clearInterval(timer);
+            }
+        }, 1000);
     }
 
     setTimeout(function() {
