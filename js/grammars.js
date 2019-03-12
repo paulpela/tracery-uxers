@@ -64,5 +64,5 @@ var input = {
     "blogPlatform": [ "Medium", "BlogSpot", "WordPress.com", "ghost.org", "GitHub", "Facebook" ],
     "storyPatternSpecialty": [ "#heOrName.capitalize# is #skillLevel.a# #uxSpecialty# and also #skillLevel.a# #uxSpecialty#." ],
     "uxSpecialty": [ "wireframer", "prototyper", "user researcher", "generalist", "inventor", "Interaction Designer", "Sketch user", "Adobe XD user" ],
-    "skillLevel": [ "exquisite", "great", "experienced", "distinguished", "skilled", "master" ]
+    "skillLevel": [ "exquisite", "great", "experienced", "distinguished", "highly skilled", "skilled", "master" ]
 };
