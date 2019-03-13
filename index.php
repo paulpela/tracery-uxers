@@ -1,3 +1,12 @@
+<?php
+
+define("DEV", true);
+
+include_once('vote/class.Vote.php');
+
+$vote = new Vote();
+
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -37,11 +46,23 @@
 
         <div class="d-md-none mt-5">&nbsp;</div>
         <main class="container">
+            <?php if(defined("DEV")) { ?>
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <span class="nav-text"><?php echo $vote->validateNonce("43fd424b39a4bf954eedb9d27d8bfdda") ? "valid" : "invalid"; ?></span>
+                </div>
+            </div>
+            <?php } ?>
             <div class="row justify-content-center">
                 <div id="output" class="col-md-7 col">
                     <div class="col text-center mt-5 loading">
                         <i class="fas fa-3x fa-spinner fa-spin"></i>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            <div id="vote" data-nonce="<?php echo $vote->getNewNonce(); ?>" class="col-md-7 col">
+
                 </div>
             </div>
         </main>
