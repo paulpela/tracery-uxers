@@ -75,5 +75,6 @@ jQuery(document).ready(function($) {
 
     jQuery('#generate').click(function() {
         loadGrammar();
+        ga('send', 'event', 'Generate Persona', 'click');
     });
 });
